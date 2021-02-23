@@ -54,6 +54,25 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        const getCurrentDay = () =>{
+        let weekday = new Array(7);
+        weekday[0] = "Sunday";
+        weekday[0] = "Monday";
+        weekday[0] = "Tuesday";
+        weekday[0] = "Wednesday";
+        weekday[0] = "Thursday";
+        weekday[0] = "Friday";
+        weekday[0] = "Satday";
+
+        let currentTime = new Date();
+        days = weekday[currentTime.getDay()];
+        let day = document.getElementById('day');
+        day.innerText = day;
+        };
+
+        getCurrentDay();
+    </script>
 </body>
 
 </html>
